@@ -1,0 +1,98 @@
+body{
+    background-color: #1d133a;
+    color: #fff;
+    margin: 0;
+}
+#welcome-section{
+    display: flex;
+    margin-top: 50px;
+    height: 100vh;
+    font-size: 50px;
+    background-image: url('https://hdqwalls.com/wallpapers/cyber-network-internet-background-he.jpg');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    animation-name: background-animation;
+    animation-duration: 2s;
+    align-self: center;
+    justify-content: center;
+}
+#welcome-section h1{
+    position: absolute; 
+    align-self: center;
+    text-align: center;
+}
+#projects{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-image: url('images/background2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 1.6em;
+}
+img{
+    margin-top: 10px;
+    width: 40vw;
+    height: 20vw;
+    border: 2px solid #000;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.8);
+}
+.project-title{
+    font-size: 25px;
+    text-align: center;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    top: 0;
+    align-items: center;
+    padding-left: 20px;
+    position: fixed;
+    gap: 50px;
+    width: 100%;
+    height: 50px;
+}
+@keyframes background-animation{
+    0%{
+        background-image: url('https://hdqwalls.com/wallpapers/cyber-network-internet-background-he.jpg');
+        height: 0vw;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url('https://hdqwalls.com/wallpapers/cyber-network-internet-background-he.jpg');
+        height: 46vw;
+        background-repeat: no-repeat;
+    }
+}
+@media only screen and (max-width: 480px){
+    @keyframes background-animation-mobile {
+        0%{
+            background-image: url('https://hdqwalls.com/wallpapers/cyber-network-internet-background-he.jpg');
+            height: 0vh;
+            background-repeat: no-repeat;
+        }
+        100%{
+            background-image: url('https://hdqwalls.com/wallpapers/cyber-network-internet-background-he.jpg');
+            height: 50vh;
+            background-repeat: no-repeat;
+        } 
+    }
+    #welcome-section{
+        animation-name: background-animation-mobile;
+        animation-duration: 1s;
+        background-image: url('https://hdqwalls.com/wallpapers/cyber-network-internet-background-he.jpg');
+        background-size:100% 100%;
+        height: 50vh;
+        background-repeat: no-repeat;
+    }
+    img{
+        height: 30vh;
+        width: 100vw;
+    }
+}
